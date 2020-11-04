@@ -9,7 +9,7 @@ const Total = props => {
   const calcTotalPrice = (c) => {
     let addPrice = 0;
     if (c.features.length > 0){
-      c.feature.forEach((ft) => addPrice += ft.price)
+      c.features.forEach((ft) => addPrice += ft.price)
     };
     return c.price + addPrice;
   }
