@@ -3,7 +3,6 @@ import React from 'react';
 const AdditionalFeature = props => {
   
   const handleAddFeature = e => {
-
     props.add(props.feature);
   }
   return (
