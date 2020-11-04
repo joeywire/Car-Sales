@@ -4,12 +4,13 @@ const Total = props => {
 
   const {car} = props;
 
-  const calcTotalPrice = (car) => {
+  //Refactor w/ array.reduce & turnary 
+  const calcTotalPrice = (c) => {
     let addPrice = 0;
-    if (car.features.length > 0){
-      car.feature.forEach((ft) => addPrice += ft.price)
+    if (c.features.length > 0){
+      c.feature.forEach((ft) => addPrice += ft.price)
     };
-    return car.price + addPrice;
+    return c.price + addPrice;
   }
 
 
